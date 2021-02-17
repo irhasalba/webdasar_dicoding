@@ -3,27 +3,122 @@
 * {
   box-sizing: border-box;
 }
+
 header {
   display: inline;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
-.nav-items {
-  float: right;
+
+main {
+  padding: 50px;
+  overflow: auto;
 }
-.brands {
-  float: left;
+
+h2,
+h3 {
+  color: #383e56;
 }
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #ff6600;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #ff6600;
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #383e56;
+  text-align: center;
+  color: white;
+}
+
 nav li {
   display: inline;
-  padding: 8px;
   list-style-type: none;
+  margin-right: 20px;
 }
-.banner {
-  position: relative;
-  top: 35px;
+
+nav {
+  background-color: #fb743e;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
 }
