@@ -21,158 +21,66 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#history">Home</a></li>
-                <li><a href="#food">About</a></li>
-                <li><a href="#destiny">Tools</a></li>
-                <li><a href="#destiny">Info</a></li>
+                <div class="justify-center">
+                    <li><a href="#history">Home</a></li>
+                    <li><a href="#food">About</a></li>
+                    <li><a href="#" onclick="showDropdown()" class="category">Category</a></li>
+                    <li><a href="#destiny">Login</a></li>
+                    <div class="dropdown-content" id="dropdown">
+                        <ul>
+                            <li class="list-dropdown"><a href="">Mobile Programming</a></li>
+                            <li class="list-dropdown"><a href="">Web Programming</a></li>
+                        </ul>
+                    </div>
+                </div>
             </ul>
         </nav>
     </header>
     <main>
         <div id="content">
-            <article id="history" class="card">
-                <h2>History</h2>
-                <img src="img/tugu-identitas.jpg" class="featured-image" alt="tugu-identitas">
-                <p>Kudus awalnya kota di tepi Sungai Gelis,dan salah satu kota di Pulau Muria. Dahulu Kota Kudus bernama
-                    Kota Tajug, disebut Tajug karena di daerah tersebut terdapat banyak Tajug, Tajug merupakan bentuk
-                    atap arsitektur tradisional yang sangat kuno dipakai tujuan keramat. Tajug dahulunya di jadikan
-                    tempat bersembahyang warga Hindu di daerah tersebut. Dengan demikian kota Tajug dulunya sudah
-                    memiliki sifat kekeramatan tertentu. Sunan Kudus mendekati warga kota Tajug dengan membuat struktur
-                    atas Menara Kudus yang berbentuk Tajug. Warga hidup dari bertani, membuat batu bata, menangkap ikan,
-                    dan berdagang. Setelah kedatangan Sunan Kudus, Kota itu dikenal sebagai "Al-Quds" yang berarti
-                    "Kudus". Kota Tajug memang sudah lama menjadi kota perdagangan, tetapi karena posisinya agak jauh
-                    dari Selat Muria, tidak ada pelabuhan besar di Kota Tajug, hanya pelabuhan transit, yang nanti akan
-                    transit lagi ke Pelabuhan Tanjung Karang di tepi Selat Muria. Pada saat itu, Selat Muria masih dalam
-                    dan lebar, sebagai jalan pintas perdagangan. Pelabuhan Tanjung Karang adalah pelabuhan transit
-                    penghubung ke pelabuhan Demak, Jepara dan Juwana. Komoditas utama ekspor Pelabuhan Tanjung Karang
-                    adalah kayu yang berasal dari muria, yang juga digunakan sebagai salah satu material pembangunan
-                    Masjid Agung Demak.</p>
-
-                <p> Pedagang dari Timur Tengah, Tiongkok, dan pedagang antar pulau dari sejumlah daerah di Nusantara
-                    berdagang kain, barang pecah belah, dan hasil pertanian di Tajug, tepatnya di Pelabuhan Tanjung
-                    Karang. Warga Tajug juga terinspirasi filosofi yang dihidupi Sunan Kudus, Gusjigang. Gus berarti
-                    bagus, ji berarti mengaji, dan gang berarti berdagang. Melalui filosofi itu, Sunan Kudus menuntun
-                    masyarakat menjadi orang berkepribadian bagus, tekun mengaji, dan mau berdagang. Dari pembauran
-                    lewat sarana perdagangan dan semangat ”gusjigang” itulah masyarakat Kudus mengenal dan mampu membaca
-                    peluang usaha. Dua di antaranya usaha batik dan jenang. Kini, selat muria sudah hilang ditelan
-                    sedimentasi, begitupun dengan Pelabuhan Tanjung Karang, hilang dan hancur ditelan sedimentasi.</p>
-
-                <p>Berdirinya Masjid Menara Kudus sebagai Hari Jadi Kabupaten Kudus. Masjid Menara Kudus tidak lepas
-                    dari peran Sunan Kudus sebagai pendiri dan pemrakarsa. Sebagaimana para walisongo yang lainnya,
-                    Sunan Kudus memiliki cara yang amat bijaksana dalam dakwahnya. Di antaranya, dia mampu melakukan
-                    adaptasi dan pribumisasi ajaran Islam di tengah masyarakat yang telah memiliki budaya mapan dengan
-                    mayoritas beragama Hindu dan Buddha. Pencampuran budaya Hindu dan Budha dalam dakwah yang dilakukan
-                    Sunan Kudus, salah satunya dapat kita lihat pada masjid Menara Kudus ini. Masjid ini didirikan pada
-                    tahun 956 H atau 1549 M. Hal ini dapat diketahui dari inskripsi (prasasti) pada batu yang lebarnya
-                    30 cm dan panjang 46 cm yang terletak pada mihrab masjid yang ditulis dalam bahasa Arab.</p>
-
-                <p>Sebenarnya, banyak orang salah paham dengan Menara Kudus. Masyarakat berpikir bahwa menara kudus
-                    dibangun bersama dengan Masjid Menara Kudus, padahal tidak. Menara Kudus sudah ada dari zaman
-                    Hindu-Buddha, dan umurnya jauh lebih tua dari Masjid Menara Kudus. Kini, kejayaan dan kemakmuran
-                    Kota Kudus karena perdagangan, terulang lagi karena Industri, dan posisi Kudus yang strategis
-                    sebagai lalu lintas perdagangan Jawa.Terletak di jalur Pantura, atau AH2 (Asian Highway 2) membuat
-                    Kota Kudus ramai, dan maju. Bahkan Kudus adalah yang paling maju di Karesidenan Pati dan di
-                    Semenanjung Muria. Pendapatan perkapita Kudus juga yang tertinggi di Jawa tengah, karena hasil
-                    industri yang besar, serta penduduk yang tidak terlalu banyak, tetapi dengan kepadatan penduduk yang
-                    relatif tinggi</p>
-            </article>
-
-            <article id="food" class="card">
-                <h2>Food</h2>
-                <h3>Soto Kudus</h3>
-                <img src="img/soto-kudus.jpg" class="featured-image" alt="soto-kudus">
-                <section>
-                    <p>Soto kudus (Hanacaraka:ꦱꦺꦴꦠꦺꦴ​ꦏꦸꦢꦸꦱ꧀) adalah soto yang berasal dari Kudus. Soto kudus, hampir
-                        mirip dengan soto Lamongan, soto kudus berisi suwiran ayam dan taoge.[1] Terkadang soto kudus
-                        juga menggunakan daging kerbau. Kuahnya lebih bening.[1]
-
-                        Soto kudus dalam penyajiannya memiliki tradisi dihidangkan dalam mangkuk kecil untuk satu porsi
-                        soto. Persis dengan soto lainnya, soto kudus ditemani sambal dan jeruk nipis.[1] Hidangan soto
-                        Kudus tidak hanya dapat ditemukan di Kudus, saat ini juga dapat ditemui di berbagai kota di
-                        Indonesia.
-
-                        Soto kudus tidak ada yang menggunakan daging sapi karena penghormatan muslim Kudus terhadap
-                        agama Hindu, yang mana sapi adalah hewan yang mereka anggap suci. Namun hal ini hanya sebatas
-                        anjuran yang berasal dari Sunan Kudus. Dia mengajari Orang Islam untuk menghargai agama lain,
-                        khususnya agama Hindu.Ini disebabkan ketika itu di Kudus banyak orang yang memeluk agama Hindu.
-                        Hal ini merupakan bentuk toleransi yang telah diajarkan oleh Sunan Kudus pada pemeluk agama
-                        Islam yang tinggal di daerah Kudus. Budaya itu pun masih berlaku sampai sekarang.</p>
-                </section>
-
-                <section>
-                    <h3>Lentog Tanjung</h3>
-                    <img src="img/lentog-tanjung.jpg" class="featured-image" alt="lentog-tanjung">
-                    <p>Lentog artinya Lontong. Dahulu, penjualnya berasal dari Desa Tanjungkarang (Tanjung). Maka
-                        dinamai Lentog Tanjung. Namun kini telah menyebar ke seluruh pelosok kota Kudus. Yang unik dari
-                        lentog adalah ukuran lontongnya yang sebesar betis orang dewasa. Biasanya lentog tanjung
-                        dinikmati sebagai menu untuk sarapan, terdiri dari 3 bahan utama, ada lontong yang dipotong
-                        kecil-kecil, sayur gori (nangka muda) dan lodeh tahu.</p>
-
-                    <p>Lentog Tanjung terdiri dari 2 kata, lentog dan tanjung. Lentog atau yang biasanya disebut lontong
-                        adalah sebuah makanan yang yang terbuat dari beras yang dibungkus daun pisang . Sedangkan
-                        tanjung (Tanjungkarang) adalah sebuah desa yang berada tepatnya di kecamatan Jati Kab. Kudus,
-                        Jawa Tengah. Ya memang makanan khas pagi ini dahulu hanya berasal dari desa sana dan hanya
-                        dijual di sekitar daerah tersebut dan ramai pada saat hari Minggu atau libur. Sekarang pun masih
-                        ada, walaupun dibeberapa tempat di lain desa juga berdiri warung warung yang menawarkan lentog
-                        Tanjung.</p>
-
-                    <p>Di sajikan di atas piring kecil yang dialasi daun pisang serta taburan bawang goreng, membuatnya
-                        semakin gurih saat disantap. Selain tampilannya yang sederhana, untuk memakannya juga tidak
-                        menggunakan sendok, namun menggunakan suru (sendok dari daun pisang).</p>
-                </section>
-
-
-                <section>
-                    <h3>Sate Kerbau</h3>
-                    <img src="img/sate-kerbau.jpg" class="featured-image" alt="sate-kerbau">
-                    <p>Sate Kerbau Kudus (Hanacaraka:ꦱꦠꦺ​ꦏꦼꦧꦺꦴ, bahasa Jawa: Saté kebo) adalah sate yang dibuat dari
-                        daging kerbau, populer di Kudus dan Jepara, Jawa Tengah. Asal mula sate kerbau berasal dari
-                        zaman Sunan Kudus.Dalam menyebarkan agama Islam, Sunan Kudus menghormati masyarakat setempat
-                        yang menganut agama Hindu dengan tidak mengonsumsi daging sapi.Sunan Kudus menganjurkan pemeluk
-                        Islam untuk mengonsumsi daging kerbau. Kebiasaan tersebut terpelihara hingga kini.</p>
-                </section>
-            </article>
-
-            <article id="destiny" class="card">
-                <h2>Wisata</h2>
-
-                <h3>Menara Kudus</h3>
-                <img src="img/menara-kudus.jpg" class="featured-image" alt="menara-kudus">
-                <p>Mesjid Menara Kudus (disebut juga dengan Masjid Al Manar ("Mesjid Menara", nama resmi: Masjid Al Aqsa
-                    Manarat Qudus; ID masjid: 01.5.14.19.02.000001[1] bahasa Jawa: Hanacaraka: ꦩꦱ꧀ꦗꦶꦢ꧀​ꦩꦼꦤꦫ​ꦏꦸꦢꦸꦱ꧀ Pegon
-                    dan Arab standar: مسجد منارة قدوس) adalah masjid kuno yang dibangun oleh Sunan Kudus sejak tahun
-                    1549 Masehi (956 Hijriah). Lokasi saat ini berada di Desa Kauman, Kecamatan Kota, Kabupaten Kudus,
-                    Jawa Tengah. Ada keunikan dari masjid ini karena memiliki menara yang serupa bangunan candi serta
-                    pola arsitektur yang memadukan konsep budaya Islam dengan budaya Hindu-Buddhis sehingga menunjukkan
-                    terjadinya proses akulturasi dalam pengislaman Jawa.</p>
-
-                <p>Sehari-hari, peziarah berkunjung ke masjid ini untuk beribadah sekaligus ziarah ke makam Sunan Kudus
-                    yang terletak di sisi barat kompleks masjid. Selain itu, masjid ini menjadi pusat keramaian pada
-                    Festival Dhandhangan yang diadakan warga Kudus untuk menyambut bulan suci Ramadan[2].</p>
-            </article>
+            <div class="card">
+                <article id="history">
+                    <h1>Top Course</h1>
+                    <h3><a href="">Learn JavaScript</a></h3>
+                    <div class="display-flex">
+                        <img src="/img/img_js.png" alt="" class="picture-sub">
+                        <p class="description">JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript
+                        is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing,
+                        prototype-based object-orientation, and first-class functions.</p>
+                    </div>
+                </article>
+                <article id="history">
+                    <h3><a href="">Learn Python From Basic</a></h3>
+                    <div class="display-flex">
+                        <img src="/img/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f.png" alt="" class="picture-sub">
+                        <p class="description">Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes
+                        code readability with its notable use of significant whitespace</p>
+                    </div>
+                </article>
+            </div>
 
         </div>
         <aside class="profile">
             <article>
                 <header>
-                    <h2>Category</h2>
-                    
+                    <h2>Category</h2>  
                 </header>
                 <section>
-            
+                        <ul>
+                            <li class="list-category">Mobile Programming</li>
+                            <li class="list-category">Top Course</li>
+                            <li class="list-category">Machine Learning</li>
+                        </ul>
                 </section>
             </article>
 
         </aside>
 
     </main>
-
-
-
     <footer>
         <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
     </footer>
-    <script src="respons.js"></script>
+    <script src="style.js"></script>
 
 
 </body>

@@ -26,7 +26,7 @@ h3 {
 footer {
   padding: 20px;
   color: white;
-  background-color: #ff6600;
+  background-color: #383e56;
 }
 
 nav a {
@@ -36,7 +36,10 @@ nav a {
 }
 
 nav a:hover {
-  font-weight: bold;
+  background-color: #9fb8ad;
+  padding: 4px 4px 4px 4px;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
 .profile header {
@@ -46,7 +49,7 @@ nav a:hover {
 footer {
   padding: 20px;
   color: white;
-  background-color: #ff6600;
+  background-color: #383e56;
   text-align: center;
   font-weight: bold;
 }
@@ -84,10 +87,11 @@ nav li {
   display: inline;
   list-style-type: none;
   margin-right: 20px;
+  padding: 15px;
 }
 
 nav {
-  background-color: #fb743e;
+  background-color: #383e56;
   padding: 5px;
   position: sticky;
   top: 0;
@@ -114,7 +118,43 @@ aside {
   padding: 20px;
   margin-top: 20px;
 }
-
+.picture-sub {
+  width: 150px;
+  height: 150px;
+}
+.display-flex {
+  display: flex;
+}
+.description {
+  margin-left: 27px;
+}
+.list-category {
+  padding: 5px;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.dropdown-content {
+  background-color: white;
+  position: absolute;
+  left: 95vh;
+  bottom: -75px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.list-dropdown {
+  display: block;
+  padding: 10px;
+}
+.dropdown-content ul li a {
+  color: black;
+}
+.dropdown-content ul li a:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
 @media screen and (max-width: 1000px) {
   #content,
   aside {
