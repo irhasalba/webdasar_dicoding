@@ -11,6 +11,7 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -155,7 +156,34 @@ aside {
   opacity: 0.5;
   color: white;
 }
+.aside-content h2 {
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .display-flex {
+    display: block;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: sticky;
+  }
+  .icon-collapse {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    cursor: pointer;
+  }
+  .link {
+  }
   #content,
   aside {
     width: 100%;

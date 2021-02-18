@@ -22,14 +22,19 @@
         <nav>
             <ul>
                 <div class="justify-center">
-                    <li><a href="#history">Home</a></li>
-                    <li><a href="#food">About</a></li>
-                    <li><a href="#" onclick="showDropdown()" class="category">Category</a></li>
-                    <li><a href="#destiny">Login</a></li>
+                    <div class="icon-collapse">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <li><a href="#history" class="link">Home</a></li>
+                    <li><a href="#about" class="link">About</a></li>
+                    <li><a href="#" onclick="showDropdown()" class="category link">Category</a></li>
+                    <li><a href="#destiny" class="link">Login</a></li>
                     <div class="dropdown-content" id="dropdown">
                         <ul>
-                            <li class="list-dropdown"><a href="">Mobile Programming</a></li>
-                            <li class="list-dropdown"><a href="">Web Programming</a></li>
+                            <li class="list-dropdown"><a href="#web">Web Programming</a></li>
+                            <li class="list-dropdown"><a href="#android">Mobile Programming</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,9 +43,9 @@
     </header>
     <main>
         <div id="content">
-            <div class="card">
-                <article id="history">
-                    <h1>Top Course</h1>
+            <div class="card" id="web">
+                <article>
+                    <h1>Web Development</h1>
                     <h3><a href="">Learn JavaScript</a></h3>
                     <div class="display-flex">
                         <img src="/img/img_js.png" alt="" class="picture-sub">
@@ -49,7 +54,7 @@
                         prototype-based object-orientation, and first-class functions.</p>
                     </div>
                 </article>
-                <article id="history">
+                <article>
                     <h3><a href="">Learn Python From Basic</a></h3>
                     <div class="display-flex">
                         <img src="/img/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f.png" alt="" class="picture-sub">
@@ -58,9 +63,29 @@
                     </div>
                 </article>
             </div>
-
+            <div class="card" id="android">
+                <article>
+                    <h1>Android Development</h1>
+                    <h3><a href="">Learn Java</a></h3>
+                    <div class="display-flex">
+                        <img src="/img/download.png" alt="" class="picture-sub">
+                        <p class="description">Java is a set of computer software and specifications developed by James Gosling at Sun Microsystems, which was later
+                        acquired by the Oracle Corporation, that provides a system for developing application software and deploying it in a
+                        cross-platform computing environment. Wikipedia</p>
+                    </div>
+                </article>
+                <article>
+                    <h3><a href="">Learn Kotlin</a></h3>
+                    <div class="display-flex">
+                        <img src="/img/cropped-pCfEzr6L_400x400.png" alt="" class="picture-sub">
+                        <p class="description">Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is
+                        designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class
+                        Library, but type inference allows its syntax to be more concise. Wikipedia</p>
+                    </div>
+                </article>
+            </div>
         </div>
-        <aside class="profile">
+        <aside class="aside-content">
             <article>
                 <header>
                     <h2>Category</h2>  
@@ -73,12 +98,48 @@
                         </ul>
                 </section>
             </article>
-
+        </aside>
+        <aside class="profile">
+            <article>
+                <header>
+                    <h2>About Me</h2>
+                    <figure>
+                        <img src="img/profile.JPG" class="profile-img">
+                        <figcaption>Profile-picture</figcaption>
+        
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama :</th>
+                            <td>Muhammad Irhas Albais</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat Tanggal Lahir </th>
+                            <td>Kudus,11 Desaember 1998</td>
+                        </tr>
+                        <tr>
+                            <th>Usia :</th>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <th>Pekerjaan</th>
+                            <td>Mahasiswa</td>
+                        </tr>
+                        <tr>
+                            <th>Hobi</th>
+                            <td>Ngoding</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        
         </aside>
 
     </main>
     <footer>
-        <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+        <p>Ngoading by Muhammad Irhas Albais&#169; 2021, Dicoding Academy,Bangkit Google</p>
     </footer>
     <script src="style.js"></script>
 
