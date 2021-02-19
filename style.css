@@ -11,7 +11,6 @@ body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 main {
@@ -161,9 +160,6 @@ aside {
 }
 
 @media screen and (max-width: 1000px) {
-  body {
-    overflow-x: hidden;
-  }
   .display-flex {
     display: block;
   }
@@ -174,13 +170,22 @@ aside {
     margin: 5px;
   }
   nav {
-    position: sticky;
+    position: relative;
   }
   .icon-collapse {
     position: absolute;
     right: 5%;
     top: 20%;
     cursor: pointer;
+  }
+
+  nav li {
+    display: flex;
+    position: relative;
+    top: 100%;
+    right: 10px;
+    justify-content: center;
+    text-align: center;
   }
   #content,
   aside {
