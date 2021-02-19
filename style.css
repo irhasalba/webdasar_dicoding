@@ -158,34 +158,17 @@ aside {
 .aside-content h2 {
   text-align: center;
 }
+a {
+  text-decoration: none;
+  color: #383e56;
+}
 
 @media screen and (max-width: 1000px) {
   .display-flex {
     display: block;
   }
-  .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-  }
   nav {
     position: relative;
-  }
-  .icon-collapse {
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    cursor: pointer;
-  }
-
-  nav li {
-    display: flex;
-    position: relative;
-    top: 100%;
-    right: 10px;
-    justify-content: center;
-    text-align: center;
   }
   #content,
   aside {

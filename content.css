@@ -1,0 +1,35 @@
+.flex-items {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.img-center {
+  display: flex;
+  justify-content: center;
+}
+.bar {
+  width: 100%;
+  background-color: #9fb8ad;
+  border-radius: 6px;
+}
+.progress {
+  width: 20%;
+  height: 30px;
+  background-color: #fb743e;
+  border-radius: 6px;
+}
+.text-right {
+  float: right;
+  padding-bottom: 5px;
+}
+.btn-next {
+  background-color: #383e56;
+  color: white;
+  margin-top: 45px;
+  height: 35px;
+  width: 90px;
+  border-radius: 9px;
+}
