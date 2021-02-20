@@ -21,6 +21,12 @@ img {
   background-color: #fb743e;
   border-radius: 6px;
 }
+.start {
+  width: 0%;
+  height: 30px;
+  background-color: #fb743e;
+  border-radius: 6px;
+}
 .text-right {
   float: right;
   padding-bottom: 5px;
@@ -32,4 +38,13 @@ img {
   height: 35px;
   width: 90px;
   border-radius: 9px;
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-next {
+    margin-top: -90px;
+  }
+  .text-right {
+    margin-left: 20px;
+  }
 }

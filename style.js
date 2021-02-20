@@ -14,12 +14,13 @@ window.onclick = function(event){
     }
 }
 
-//progress bar
+//progress bar 
 var i = 0;
-function move() {
+function bar() {
   if (i == 0) {
     i = 1;
     var elem = document.querySelector(".progress");
+    var bar = document.querySelector(".barstatus");
     var width = 10;
     var id = setInterval(frame, 10);
     function frame() {
@@ -29,7 +30,29 @@ function move() {
       } else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
+        bar.style.width = width + "%";
+        bar.innerHTML = width + "%";
+      }
+    }
+  }
+}
+var i = 0;
+function startbar() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.querySelector(".start");
+    var bar = document.querySelector(".status");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 20) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        bar.style.width = width + "%";
+        bar.innerHTML = width + "%";
       }
     }
   }
