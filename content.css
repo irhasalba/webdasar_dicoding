@@ -38,6 +38,14 @@ img {
   height: 35px;
   width: 90px;
   border-radius: 9px;
+  border: none;
+  font-size: 0.9rem;
+  box-shadow: inset 0 0 0 0 #fb743e;
+  transition: ease-out 0.2s;
+  outline: none;
+}
+.btn-next:hover {
+  box-shadow: inset 90px 0 0 0 #fb743e;
 }
 
 @media screen and (max-width: 1000px) {
